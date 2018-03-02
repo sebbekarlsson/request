@@ -6,7 +6,7 @@
  * @param Object data
  * @param function callback(response)
  */
-var request = function (url, type, data, callback) {
+module.exports = function request(url, type, data, callback) {
     var xhr = new XMLHttpRequest();
     
     xhr.onreadystatechange = function() {
