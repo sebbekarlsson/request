@@ -6,7 +6,7 @@
  * @param Object data
  * @param function callback(response)
  */
-module.exports = function request(url, type, data, callback) {
+function request(url, type, data, callback) {
     var xhr = new XMLHttpRequest();
     
     xhr.onreadystatechange = function() {
@@ -18,3 +18,6 @@ module.exports = function request(url, type, data, callback) {
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.send(JSON.stringify(data));
 };
+
+if (typeof module !== 'undefined' && module.exports)
+    module.exports = request;
