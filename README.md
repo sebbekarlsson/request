@@ -12,3 +12,6 @@
             console.log(data);
         });
 
+## Install using npm
+
+    npm install request-tiny
