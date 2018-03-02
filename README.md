@@ -13,5 +13,6 @@
         });
 
 ## Install using npm
+> [https://www.npmjs.com/package/request-tiny](https://www.npmjs.com/package/request-tiny)
 
     npm install request-tiny
